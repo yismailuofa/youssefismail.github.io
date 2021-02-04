@@ -12,11 +12,9 @@ TODO
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Youssef Ismail</title>
     <style>
-        @keyframes pulse {
+        /* @keyframes pulse {
             60% {
                 transform: scale(1.3);
             }
@@ -24,10 +22,21 @@ TODO
             100% {
                 transform: scale(1);
             }
+        } */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            20% {
+                transform: scale(1.3);
+            }
+            40% {
+                transform: scale(1);
+            }
         }
     </style>
 </head>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
     <body class="d-flex h-100 text-center text-white bg-dark">
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" style="max-width: 70rem;">
             <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark mb-0 border-bottom">
@@ -41,7 +50,7 @@ TODO
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <div class="navbar-nav ms-auto">
-                            <a class="nav-link" aria-current="page" href="#">Who I Am</a>
+                            <a class="nav-link" href="#whoiam">Who I Am</a>
                             <a class="nav-link" href="#">What I'm Up To</a>
                             <a class="nav-link" href="#" style="padding-right: 1rem;">How To Reach Me</a>
                             <a role="button" class="btn btn-outline-light" href="static/youssefIsmailWebResume.pdf">My Resume</a>
@@ -50,10 +59,23 @@ TODO
                 </div>
             </nav>
             <main>
-            <div class="container pt-5">
-                <h1 class="display-1 pt-5" style="animation-name: pulse; animation-duration: 1s;">Hi there!</h1>
-                <p class="lead"> I'm Youssef, and I like to build meaningful software. Take a look around and get to know me.</p>
-            </div>
+                <div class="container" style="padding-top: 12rem; padding-bottom: 25rem">
+                    <h1 class="display-1" style="animation-name: pulse; animation-duration: 4s; animation-iteration-count: infinite;">Hi there!</h1>
+                    <p class="lead"> I'm Youssef, and I like to build meaningful software. Take a look around and get to know me.</p>
+                    <a href="#whoiam">Learn more</a>
+                </div>
+
+                <span id="whoiam"><h1 class="display-5">Who I Am</h1></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus at ultrices mi tempus imperdiet nulla. Nunc lobortis mattis aliquam faucibus purus in massa tempor nec. Vitae congue eu consequat ac felis. Volutpat blandit aliquam etiam erat velit scelerisque in dictum. Eu non diam phasellus vestibulum lorem. Tincidunt arcu non sodales neque. Porta nibh venenatis cras sed felis. Facilisis sed odio morbi quis. Non arcu risus quis varius quam. Ultrices eros in cursus turpis massa. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor. Odio tempor orci dapibus ultrices in iaculis. Adipiscing commodo elit at imperdiet dui accumsan sit amet nulla. Mi proin sed libero enim sed. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Consequat semper viverra nam libero justo laoreet sit amet cursus.
+
+                    At tempor commodo ullamcorper a lacus. Vitae et leo duis ut diam quam nulla. Augue neque gravida in fermentum et sollicitudin ac orci. Urna duis convallis convallis tellus id interdum velit laoreet. Sit amet commodo nulla facilisi nullam. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Dui id ornare arcu odio ut sem. Malesuada proin libero nunc consequat interdum varius. In egestas erat imperdiet sed euismod nisi porta lorem. Cursus vitae congue mauris rhoncus aenean vel. Tellus mauris a diam maecenas sed enim ut. Et tortor at risus viverra adipiscing. Gravida cum sociis natoque penatibus et. Dui faucibus in ornare quam viverra. Id nibh tortor id aliquet lectus proin nibh nisl condimentum. Ornare suspendisse sed nisi lacus sed viverra. Nunc aliquet bibendum enim facilisis gravida. Integer malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Pretium fusce id velit ut.
+                    
+                    Arcu ac tortor dignissim convallis aenean et tortor at. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Ultricies tristique nulla aliquet enim tortor at. Quam viverra orci sagittis eu volutpat odio facilisis. Ac turpis egestas integer eget aliquet nibh praesent. Aliquam id diam maecenas ultricies mi. Etiam non quam lacus suspendisse faucibus interdum posuere lorem. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Ullamcorper sit amet risus nullam eget felis. In hendrerit gravida rutrum quisque non tellus orci. Gravida rutrum quisque non tellus orci. Faucibus pulvinar elementum integer enim neque volutpat. Lacinia quis vel eros donec ac odio tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Ut morbi tincidunt augue interdum velit euismod in. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Nunc sed augue lacus viverra vitae.
+                    
+                    Sit amet massa vitae tortor condimentum lacinia quis. Mus mauris vitae ultricies leo integer malesuada nunc vel risus. Ac auctor augue mauris augue neque gravida. Nunc mattis enim ut tellus elementum sagittis vitae et. Ut ornare lectus sit amet. Tincidunt dui ut ornare lectus sit amet est placerat in. Congue quisque egestas diam in arcu cursus euismod quis. Proin libero nunc consequat interdum varius sit amet mattis vulputate. Mi in nulla posuere sollicitudin aliquam ultrices sagittis. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Nulla facilisi etiam dignissim diam quis enim. Congue quisque egestas diam in arcu cursus euismod quis viverra. Metus dictum at tempor commodo ullamcorper a lacus. Vestibulum lectus mauris ultrices eros in cursus. Enim neque volutpat ac tincidunt vitae semper quis.
+                    
+                    Ridiculus mus mauris vitae ultricies leo integer malesuada. Ut aliquam purus sit amet luctus. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Odio pellentesque diam volutpat commodo sed egestas egestas. Diam in arcu cursus euismod quis viverra nibh. Ullamcorper malesuada proin libero nunc consequat. A diam sollicitudin tempor id eu. Lectus sit amet est placerat in egestas. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Faucibus pulvinar elementum integer enim.</p>
+                
             </main>
         </div>
     </body>
