@@ -3,6 +3,7 @@
 TODO 
 1. Add highlight to toolbar
 2. fix image on safari
+3. Dropdown dissapear
 -->
 <head>
     <!-- Required meta tags -->
@@ -14,6 +15,7 @@ TODO
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Youssef Ismail</title>
     <style>
+        /* only one loop */
         /* @keyframes pulse {
             60% {
                 transform: scale(1.3);
@@ -38,8 +40,8 @@ TODO
 </head>
 <html lang="en" style="scroll-behavior: smooth;">
     <body class="d-flex h-100 text-center text-white bg-dark">
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" style="max-width: 70rem;">
-            <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark mb-0 border-bottom">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column pt-0" style="max-width: 70rem;">
+            <nav id = "nav" class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark mb-0 border-bottom">
                 <div class="container-fluid">
                     <a class="navbar-brand align-items-top pb-0 d-flex" href="index.html">
                         <img src="static/laptop.png" alt="" class="d-inline-block align-top" width="26" height="26">
@@ -59,13 +61,13 @@ TODO
                 </div>
             </nav>
             <main>
-                <div class="container" style="padding-top: 12rem; padding-bottom: 25rem">
+                <div style="padding-top: 12rem; padding-bottom: 25rem">
                     <h1 class="display-1" style="animation-name: pulse; animation-duration: 4s; animation-iteration-count: infinite;">Hi there!</h1>
                     <p class="lead"> I'm Youssef, and I like to build meaningful software. Take a look around and get to know me.</p>
-                    <a href="#whoiam">Learn more</a>
+                    <a class="anchor" href="#whoiam">Learn more</a>
                 </div>
 
-                <span id="whoiam"><h1 class="display-5">Who I Am</h1></span>
+                <span id="whoiam"><h1 class="display-5" style="padding-top: 65px;">Who I Am</h1></span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus at ultrices mi tempus imperdiet nulla. Nunc lobortis mattis aliquam faucibus purus in massa tempor nec. Vitae congue eu consequat ac felis. Volutpat blandit aliquam etiam erat velit scelerisque in dictum. Eu non diam phasellus vestibulum lorem. Tincidunt arcu non sodales neque. Porta nibh venenatis cras sed felis. Facilisis sed odio morbi quis. Non arcu risus quis varius quam. Ultrices eros in cursus turpis massa. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor. Odio tempor orci dapibus ultrices in iaculis. Adipiscing commodo elit at imperdiet dui accumsan sit amet nulla. Mi proin sed libero enim sed. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Consequat semper viverra nam libero justo laoreet sit amet cursus.
 
                     At tempor commodo ullamcorper a lacus. Vitae et leo duis ut diam quam nulla. Augue neque gravida in fermentum et sollicitudin ac orci. Urna duis convallis convallis tellus id interdum velit laoreet. Sit amet commodo nulla facilisi nullam. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Dui id ornare arcu odio ut sem. Malesuada proin libero nunc consequat interdum varius. In egestas erat imperdiet sed euismod nisi porta lorem. Cursus vitae congue mauris rhoncus aenean vel. Tellus mauris a diam maecenas sed enim ut. Et tortor at risus viverra adipiscing. Gravida cum sociis natoque penatibus et. Dui faucibus in ornare quam viverra. Id nibh tortor id aliquet lectus proin nibh nisl condimentum. Ornare suspendisse sed nisi lacus sed viverra. Nunc aliquet bibendum enim facilisis gravida. Integer malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Pretium fusce id velit ut.
@@ -80,4 +82,9 @@ TODO
         </div>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script>
+        const nav = document.getElementById("nav");
+        const height = nav.offsetHeight;
+        console.log(height);
+    </script>
 </html>
